@@ -1,20 +1,29 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
 # Setup Vite + React + JavaScript in npm
 
 Official reference guide - [click here](https://v3.vitejs.dev/guide/).
 
-#### Run this command in the terminal where you would set the root folder / directory of the project (Vite will create the project's root directory later):
-	```
+Run this command in the terminal where you would set the root folder / directory of the project (Vite will create the project's root directory later):
 	npm init vite
-	```
 
-#### Fill in the follow up prompts in the terminal. Enter the name of the project to create the root-directory:
+
+Fill in the follow up prompts in the terminal. Enter the name of the project to create the root-directory:
 	```
 	fcc-markdown-previewer-1.0
 	```
 
-#### In the terminal, choose **React** and **JavaScript**
+In the terminal, choose **React** and **JavaScript**
 
-#### After the initial setup, run the following in the terminal:
+After the initial setup, run the following in the terminal:
 	# Go inside the created project root-directory.
 	cd fcc-markdown-previewer-1.0
 
@@ -24,16 +33,23 @@ Official reference guide - [click here](https://v3.vitejs.dev/guide/).
 	# Run vite development server. Start developing.
 	npm run dev
 
-#### Start developing. 
-The development files:
+Start developing. The development files:
 - *Source codes* - like .js, .css, etc. go inside the **./src** sub-folder.
 - *External files* - like json go inside the **./public** sub-folder; static assets like images, icons, etc. go inside the **./assets** sub-folder.
 
-# React + Vite
+# Git setup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a new repository on the command line
+	```
+	echo "# fcc-markdown-previewer-1.0" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
 
-Currently, two official plugins are available:
+	# The url below is the created remote repository.
+	git remote add origin https://github.com/ericraycodes/fcc-markdown-previewer-1.0.git
+	
+	git push -u origin main
+	```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
