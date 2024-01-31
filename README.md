@@ -17,13 +17,21 @@ Run this command in the terminal where you would set the root folder / directory
 
 
 Fill in the follow up prompts in the terminal. Enter the name of the project to create the root-directory:
-	```
-	fcc-markdown-previewer-1.0
-	```
 
-In the terminal, choose **React** and **JavaScript**
+	fcc-markdown-previewer-1.0
+
+
+In the terminal, choose:
+
+	React
+
+and
+
+	JavaScript
+
 
 After the initial setup, run the following in the terminal:
+	
 	# Go inside the created project root-directory.
 	cd fcc-markdown-previewer-1.0
 
@@ -39,17 +47,23 @@ Start developing. The development files:
 
 # Git setup
 
-Create a new repository on the command line
-	```
+Create a new repository on the command line.
+
+	#
 	echo "# fcc-markdown-previewer-1.0" >> README.md
 	git init
 	git add README.md
 	git commit -m "first commit"
 	git branch -M main
 
-	# The url below is the created remote repository.
-	git remote add origin https://github.com/ericraycodes/fcc-markdown-previewer-1.0.git
+	# The URL below is the created remote repository.
+	git remote add origin https://github.com/{USER-NAME}/{REPO-NAME}.git
 	
 	git push -u origin main
-	```
 
+
+Or push an existing repository from the command line.
+
+	git remote add origin https://github.con/{USER-NAME}/{REPO-NAME}.git
+	git branch -M master
+	git push -u origin master
