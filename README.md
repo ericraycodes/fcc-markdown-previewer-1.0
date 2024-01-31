@@ -20,7 +20,7 @@ Currently, two official plugins are available:
  Official reference guide - [click here](https://v3.vitejs.dev/guide/).
 
 ### Run this command in the terminal,
- where you would set the root folder / directory of the project (Vite will create the project's root directory later):
+ This is where the **root** folder / directory of the project will be set (Vite will create the project's root directory later):
 
 	npm init vite
 
