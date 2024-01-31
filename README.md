@@ -16,10 +16,11 @@ Run this command in the terminal where you would set the root folder / directory
 	npm init vite
 
 
-Fill in the follow up prompts in the terminal. Enter the name of the project to create the root-directory:
+### Fill in the follow up prompts in the terminal.
+
+Enter the name of the project to create the root-directory:
 
 	fcc-markdown-previewer-1.0
-
 
 In the terminal, choose:
 
@@ -30,8 +31,10 @@ and
 	JavaScript
 
 
-After the initial setup, run the following in the terminal:
-	
+### After the initial setup...
+
+run the following in the terminal:
+
 	# Go inside the created project root-directory.
 	cd fcc-markdown-previewer-1.0
 
@@ -41,7 +44,9 @@ After the initial setup, run the following in the terminal:
 	# Run vite development server. Start developing.
 	npm run dev
 
-Start developing. The development files:
+### Start developing.
+
+The development files:
 - *Source codes* - like .js, .css, etc. go inside the **./src** sub-folder.
 - *External files* - like json go inside the **./public** sub-folder; static assets like images, icons, etc. go inside the **./assets** sub-folder.
 
