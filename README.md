@@ -1,3 +1,10 @@
+# Reminders
+- Functionality first. Style when needed.
+- Incorporate accessibility along and at the beginning of the project.
+- Optimize:
+	- component renders
+	- state management
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,30 +17,31 @@ Currently, two official plugins are available:
 
 # Setup Vite + React + JavaScript in npm
 
-Official reference guide - [click here](https://v3.vitejs.dev/guide/).
+ Official reference guide - [click here](https://v3.vitejs.dev/guide/).
 
-Run this command in the terminal where you would set the root folder / directory of the project (Vite will create the project's root directory later):
+### Run this command in the terminal,
+ where you would set the root folder / directory of the project (Vite will create the project's root directory later):
+
 	npm init vite
-
 
 ### Fill in the follow up prompts in the terminal.
 
-Enter the name of the project to create the root-directory:
+ Enter the name of the project to create the root-directory:
 
 	fcc-markdown-previewer-1.0
 
-In the terminal, choose:
+ In the terminal, choose:
 
 	React
 
-and
+ and
 
 	JavaScript
 
 
 ### After the initial setup...
 
-run the following in the terminal:
+ run the following in the terminal:
 
 	# Go inside the created project root-directory.
 	cd fcc-markdown-previewer-1.0
@@ -46,13 +54,13 @@ run the following in the terminal:
 
 ### Start developing.
 
-The development files:
-- *Source codes* - like .js, .css, etc. go inside the **./src** sub-folder.
-- *External files* - like json go inside the **./public** sub-folder; static assets like images, icons, etc. go inside the **./assets** sub-folder.
+ The development files:
+ - *Source codes* - like .js, .css, etc. go inside the **./src** sub-folder.
+ - *External files* - like json go inside the **./public** sub-folder; static assets like images, icons, etc. go inside the **./assets** sub-folder.
 
-# Git setup
+# Git initial setup
 
-Create a new repository on the command line.
+ Create a new repository on the command line.
 
 	#
 	echo "# fcc-markdown-previewer-1.0" >> README.md
@@ -67,7 +75,7 @@ Create a new repository on the command line.
 	git push -u origin main
 
 
-Or push an existing repository from the command line.
+ Or push an existing repository from the command line.
 
 	git remote add origin https://github.con/{USER-NAME}/{REPO-NAME}.git
 	git branch -M master
