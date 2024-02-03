@@ -2,14 +2,15 @@
  * 
  */
 
-export default function Editor({ value, onTextInput }) {
+export default function Editor({ value, onEditorInput }) {
 
   // This will handle the #editor's user text-input.
   const handleOnChange = (event) => {
+    // This will stop the event bubbling phase.
     event.stopPropagation();
-    onTextInput(event);
+    onEditorInput(event);
     const editor = document.getElementById('editor').value;
-    window.console.log('\t<Editor/> dom #editor:', editor)
+    // window.console.log('\t<Editor/> dom #editor:', editor)
   };
 
   window.console.log('<Editor /> RENDERING...')
@@ -21,6 +22,7 @@ export default function Editor({ value, onTextInput }) {
       placeholder='This is a placeholder. This is the textarea. The #editor.'
       rows={10}
       cols={50}
-    ></textarea>
+    >
+    </textarea>
   );
 }
