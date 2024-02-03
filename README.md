@@ -1,6 +1,6 @@
 # Reminders
+- App structure and accessibility.
 - Functionality first. Style when needed.
-- Incorporate accessibility along and at the beginning of the project.
 - Optimize:
 	- component renders
 	- state management
