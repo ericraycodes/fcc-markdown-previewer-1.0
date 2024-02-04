@@ -30,8 +30,6 @@ The **dangerouslySetInnerHTML** is *React*'s replacement for using *innerHTML* i
 
 Sample code below:
 
-	```
 	function MyComponent {
 		return <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}} />;
-	}	
-	```
+	}
