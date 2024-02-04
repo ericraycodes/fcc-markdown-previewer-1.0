@@ -33,3 +33,23 @@ Sample code below:
 	function MyComponent {
 		return <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}} />;
 	}
+
+# Using SASS
+
+1. **Installed** SASS - reference [here](https://sass-lang.com/install/). Run this in the terminal:
+	```
+	# install as devDependency
+	npm i --save-dev sass
+	```
+1. **Created** a sass file.
+	```
+	./src/styles/app.scss
+	```
+1. **Imported** the sass file to react.js. This will automatically compile to a *CSS* file.
+	```
+	import './styles/app.scss';
+	```
+1. The **@use** rule is used to share variables and styles among sass files.
+	```
+	@use './app.scss';
+	```

@@ -26,12 +26,6 @@ function App() {
 
 
   // This is the parsed input into markdown.
-  // const preview = marked.parse(editorInput, [
-  //   {
-  //     gfm: true,
-  //     breaks: true
-  //   }
-  // ]);
   marked.use({
     pedantic: false,
     gfm: true,
@@ -48,18 +42,23 @@ function App() {
     <header>
       <h1>Markdown Previewer</h1>
     </header>
+
     <main className='editor-preview-box'>
-      <div>
-        <div>
+
+      <div className='editor-box'>
+
+        <div className='box-head'>
           <label htmlFor='editor'>Editor</label>
           <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
-
+        
         <Editor value={editorInput} onEditorInput={onEditorInput} />
-
+       
       </div>
-      <div>
-        <div>
+
+      <div className='preview-box'>
+
+        <div className='box-head'>
           <label htmlFor='preview'>Previewer</label>
           <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
@@ -67,6 +66,7 @@ function App() {
         <Preview preview={preview} />
 
       </div>
+
     </main>
     </>
   )

@@ -1,0 +1,90 @@
+
+/* COLOR VARIABLES */
+$code-bgcolor: #EFECEC;
+
+
+/* initial rules */
+* {
+  box-sizing: border-box;
+}
+
+/* desktop layout */
+#root {
+  display: flex;
+  flex-flow: column;
+
+  .editor-preview-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 0 5px;
+  }
+
+}
+
+/* box styles */
+body {
+  margin: 0;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  height: 80px;
+}
+main {
+  height: calc(100vh - 110px);
+  border: 1px solid lightblue;
+}
+.box-head {
+  height: 25px;
+}
+.editor-box,
+.preview-box {
+  width: 49%;
+  height: 100%;
+}
+#editor,
+#preview {
+  width: 100%;
+  height: calc(100% - 25px);
+}
+#preview{
+  border: 1px dashed orange;
+  padding: 20px;
+  overflow: hidden scroll;
+
+  * {
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  pre {
+    width: 100%;
+  }
+  pre,
+  code {
+    background-color: $code-bgcolor;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  blockquote {
+    border-left: 3px solid gray;
+    padding: 0 5px;
+  }
+  table {
+    text-align: left;
+    border: 1px solid gray;
+  }
+
+}
+footer {
+  height: 30px;
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+
