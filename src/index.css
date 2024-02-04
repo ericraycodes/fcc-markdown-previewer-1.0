@@ -16,17 +16,23 @@
 
 /* initial rules */
 *:not(#preview *) {
-  margin: 0;
-  padding: 0;
+  margin: none;
+  padding: none;
   box-sizing: border-box;
-
-  /* temporary: dev styles only */
-  border: 1px solid dimgray;
-  margin: 1px;
 }
 
 /* desktop layout: split window */
 
 
 /* box styles */
+body {
+  margin: none;
+}
 
+
+/* temporary dev styles */
+header,
+main,
+footer {
+  border: 1px solid lightblue;
+}

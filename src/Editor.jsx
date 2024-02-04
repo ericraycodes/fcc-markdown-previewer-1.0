@@ -5,8 +5,7 @@ import { useEffect } from 'react';
 
 export default function Editor({ value, onEditorInput }) {
 
-
-
+  // This loads a pre-emptive input to the #editor at page load.
   useEffect(() => {
     onEditorInput(initialInput);
   }, []);
@@ -22,6 +21,7 @@ export default function Editor({ value, onEditorInput }) {
 
 
   window.console.log('<Editor /> RENDERING...')
+  
   return (
     <textarea
       id='editor'

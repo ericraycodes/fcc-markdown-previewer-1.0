@@ -7,6 +7,7 @@ import Preview from './Preview';
  * 1. Controlled input: React's state management will maintain the text input from the #editor.
  * 2. This needs state management. The input changes are state changes. And state is shared by
  *    both the #editor and the #preview component.
+ * 3. #preview functionality: <code> markdown on highlights - not yet done.
  * 
  * @returns A markdown preview of a text input.
  */
