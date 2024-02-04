@@ -3,6 +3,7 @@ These were priorities when this project is being developed:
 1. HTML structure (semantic and accessible as possible).
 1. Functionality.
 1. Style when needed. It should not interfere with the app's heart function.
+1. make mds tab besides each other on github.
 
 
 # marked.js
@@ -28,8 +29,9 @@ The **dangerouslySetInnerHTML** is *React*'s replacement for using *innerHTML* i
 **REMINDER**: This can dangerously expose users to *cross-site scripting (XSS)* attacks.
 
 Sample code below:
+
 	```
 	function MyComponent {
-		return <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}};
+		return <div dangerouslySetInnerHTML={{__html: 'First &middot; Second'}} />;
 	}	
 	```

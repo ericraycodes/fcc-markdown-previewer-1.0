@@ -1,10 +1,3 @@
-# Reminders
-- App structure and accessibility.
-- Functionality first. Style when needed.
-- Optimize:
-	- component renders
-	- state management
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -80,19 +73,3 @@ Currently, two official plugins are available:
 	git remote add origin https://github.con/{USER-NAME}/{REPO-NAME}.git
 	git branch -M master
 	git push -u origin master
-
-# marked.js
-
-[Full Reference](https://marked.js.org).
-
-- Go to this [cdn](https://cdnjs.com/libraries/marked/).
-- Copy one of the script tags.
-- Add / paste it to your *html* file. An example:
-	```
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.2.0/marked.min.js"
-		integrity="sha512-BLTLvBrdIq0KLzJH2C9GpxL6KmCqX5cofqkYxUZPp8J2beb7ABAXPpL7aIbtSdtqLWLIgAyFFgePj1p/sq7lRw=="
-		crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-	></script>
-	```
-- Use the **window.marked** in your react.js.

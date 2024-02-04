@@ -12,3 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+
+
+/* initial rules */
+*:not(#preview *) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* temporary: dev styles only */
+  border: 1px solid dimgray;
+  margin: 1px;
+}
+
+/* desktop layout: split window */
+
+
+/* box styles */
+
