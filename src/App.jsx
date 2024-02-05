@@ -41,13 +41,14 @@ function App() {
     <>
     <header>
       <h1>Markdown Previewer</h1>
+      <p>For freeCodeCamp purposes only.</p>
     </header>
 
-    <main className='editor-preview-box'>
+    <main>
 
-      <div className='editor-box'>
+      <div className='container'>
 
-        <div className='box-head'>
+        <div className='io-head'>
           <label htmlFor='editor'>Editor</label>
           <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
@@ -56,9 +57,9 @@ function App() {
        
       </div>
 
-      <div className='preview-box'>
+      <div className='container'>
 
-        <div className='box-head'>
+        <div className='io-head'>
           <label htmlFor='preview'>Previewer</label>
           <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>

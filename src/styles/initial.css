@@ -1,34 +1,37 @@
-/* PARTIALS */
-@import 'layout';
-
-
-/* VARIABLES */
-$color-bg-code: #EFECEC;
-$height-header: 4.4rem;
-$height-footer: 1.5rem;
-$height-main: calc(100vh - $height-header - $height-footer);
-
-
-
-
 /* 
     INITIAL RULES 
 */
 
 
-/* initial */
+/* boxes */
 *:not(.io, #preview *) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+div.container {
+  margin: 5px;
+}
+
+.io {
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+#editor {
+  border: none;
+  resize: none;
+}
+#preview {
+  overflow: hidden scroll;
+}
 
 /* dimensions */
 #root {
   width: 100vw;
   height: 100vh;
 }
+
 
 header {
   height: $height-header;
@@ -55,22 +58,4 @@ footer {
 .io {
   width: 100%;
   height: calc(100% - 20px);
-}
-
-
-/* boxes */
-.io {
-  box-sizing: border-box;
-  padding: 0 10px;
-}
-#editor {
-  border: none;
-  resize: none;
-}
-#preview {
-  overflow: hidden scroll;
-
-  img {
-    width: 100%;
-  }
 }

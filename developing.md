@@ -49,7 +49,7 @@ Sample code below:
 	```
 	import './styles/app.scss';
 	```
-1. The **@use** rule is used to share variables and styles among sass files.
+1. **Partials**: The **@import** rule is used to share variables and styles among sass files. [Reference](https://www.freecodecamp.org/news/the-beginners-guide-to-sass/).
 	```
-	@use './app.scss';
+	@import './app.scss';
 	```

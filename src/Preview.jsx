@@ -5,6 +5,7 @@ export default function Preview({ preview }) {
     return (
         <div
           id='preview'
+          className='io'
           role='document'
           dangerouslySetInnerHTML={{__html: preview }}
         />
