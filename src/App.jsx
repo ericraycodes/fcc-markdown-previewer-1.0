@@ -41,7 +41,7 @@ function App() {
     <>
     <header>
       <h1>Markdown Previewer</h1>
-      <p>For freeCodeCamp purposes only.</p>
+      <p>For freeCodeCamp purposes only. By Eric Ray Saladar. 2024.</p>
     </header>
 
     <main>
@@ -60,7 +60,7 @@ function App() {
       <div className='container'>
 
         <div className='io-head'>
-          <label htmlFor='preview'>Previewer</label>
+          <label htmlFor='preview'>Preview</label>
           <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
 

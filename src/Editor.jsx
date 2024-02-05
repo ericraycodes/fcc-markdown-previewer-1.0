@@ -22,14 +22,15 @@ export default function Editor({ value, onEditorInput }) {
   window.console.log('<Editor /> RENDERING...');
 
   return (
+    <div className='io'>
     <textarea
       id='editor'
-      className='io'
       value={value}
       onChange={handleOnChange}
       placeholder='This is a placeholder. This is the textarea. The #editor.'
     >
     </textarea>
+    </div>
   );
 }
 

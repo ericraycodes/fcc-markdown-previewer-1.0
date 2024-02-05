@@ -1,9 +1,100 @@
-/*
-	LAYOUT partial
-*/
+/* dimension variables */
+$height-header: 90px;
+$height-main: calc(100vh - $height-header);
+$h-io-head: 25px;
+$h-io: calc(100% - $h-io-head);
 
+
+// app on viewport
+#root {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+// landmark dimensions on viewport
+header {
+	height: $height-header;
+	padding: 0 10px;
+}
+main {
+	// background-color: lightblue;
+	height: $height-main; 
+	padding: 7px 10px;
+}
+
+
+// landmark layout
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 main {
 	display: flex;
-	flex-flow: row-wrap;
-	gap: 10px;
+	justify-content: space-between;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
 }
+
+
+// boxes
+header {
+	border-bottom: 3px solid #161A30;
+}
+.container {
+	height: 100%;
+	width: 49.5%;
+	overflow: hidden;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+
+	.io-head {
+		height: $h-io-head;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		background-color: lightgray;
+
+		button {
+			display: none;
+		}
+	}
+
+	.io {
+		height: $h-io;
+
+		#editor {
+			height: 100%;
+			width: 100%;
+			resize: none;
+			border: none;
+			padding: 0 7px 7px;
+		}
+	}
+
+	#preview {
+		overflow: hidden scroll;
+		padding: 0 7px 7px;
+
+		* {
+			box-sizing: content-box;
+			line-height: 1.5;
+		}
+
+		pre, code {
+			border-radius: 3px;
+			padding: 5px 10px;
+		}
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
+

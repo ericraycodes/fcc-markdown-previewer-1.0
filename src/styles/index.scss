@@ -1,76 +1,42 @@
-/* PARTIALS */
+/* partials */
 @import 'layout';
+@import 'typo';
 
 
-/* VARIABLES */
-$color-bg-code: #EFECEC;
-$height-header: 4.4rem;
-$height-footer: 1.5rem;
-$height-main: calc(100vh - $height-header - $height-footer);
+/* color variables */
+$color-code-bg: #EFECEC;
+$color-editor-font: #352F44;
+$color-preview-font: #161A30;
 
 
-
-
-/* 
-    INITIAL RULES 
-*/
-
-
-/* initial */
-*:not(.io, #preview *) {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* initial rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.io * {
+    margin: revert;
+    padding: revert;
 }
 
 
-/* dimensions */
-#root {
-  width: 100vw;
-  height: 100vh;
-}
-
+// colors
 header {
-  height: $height-header;
-  width: 100%;
-}
-main {
-  width: 100%;
-  height: $height-main;
-}
-footer {
-  width: 100%;
-  height: $height-footer;
+    background-color: #F5F7F8;
+
+    h1, p {
+        color: $color-editor-font;
+    }
 }
 
 .container {
-  height: 100%;
-  width: 50%;
-}
 
-.io-head {
-  width: 100%;
-  height: 20px;
-}
-.io {
-  width: 100%;
-  height: calc(100% - 20px);
-}
+    #preview {
+        color: $color-preview-font;
 
-
-/* boxes */
-.io {
-  box-sizing: border-box;
-  padding: 0 10px;
-}
-#editor {
-  border: none;
-  resize: none;
-}
-#preview {
-  overflow: hidden scroll;
-
-  img {
-    width: 100%;
-  }
+        pre, code {
+            background-color: $color-code-bg;
+        }
+    }
 }
