@@ -55,3 +55,13 @@ Sample code below:
 
 	@import './partial.scss';
 	```
+
+# Fixing "Filename too long" error on git
+
+[Reference](https://katalon-inc.my.site.com/katalonhelpcenter/s/article/How-to-fix-Git-Clone-Filename-too-long-Error-in-Windows) for full read.
+
+In the project-root-directory, run the command in the terminal:
+
+	```
+	git config --system core.longpaths true
+	```
