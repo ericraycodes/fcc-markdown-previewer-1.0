@@ -6,8 +6,13 @@ html {
 
 
 /* font-size */
-header p {
-    font-size: 0.8rem;
+header {
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.65rem;
+    }
 }
 label {
     font-size: 0.8rem;

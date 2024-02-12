@@ -49,7 +49,9 @@ Sample code below:
 	```
 	import './styles/app.scss';
 	```
-1. **Partials**: The **@import** rule is used to share variables and styles among sass files. [Reference](https://www.freecodecamp.org/news/the-beginners-guide-to-sass/).
+1. **Partials**: Create *partials* with filenames beginning with *underscores* (_). The **@import** rule is used to share variables and styles among sass files. [Reference](https://www.freecodecamp.org/news/the-beginners-guide-to-sass/).
 	```
-	@import './app.scss';
+	// import to './styles.scss' a partial file named '_partial.scss'
+
+	@import './partial.scss';
 	```

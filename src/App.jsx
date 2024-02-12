@@ -50,7 +50,6 @@ function App() {
 
         <div className='io-head'>
           <label htmlFor='editor'>Editor</label>
-          <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
         
         <Editor value={editorInput} onEditorInput={onEditorInput} />
@@ -61,7 +60,6 @@ function App() {
 
         <div className='io-head'>
           <label htmlFor='preview'>Preview</label>
-          <button className='resize-button' aria-label='resize button.'>+ / -</button>
         </div>
 
         <Preview preview={preview} />

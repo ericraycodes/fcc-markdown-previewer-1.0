@@ -1,12 +1,7 @@
 /* partials */
 @import 'layout';
 @import 'typo';
-
-
-/* color variables */
-$color-code-bg: #EFECEC;
-$color-editor-font: #352F44;
-$color-preview-font: #161A30;
+@import 'effect';
 
 
 /* initial rules */
@@ -19,24 +14,7 @@ $color-preview-font: #161A30;
     margin: revert;
     padding: revert;
 }
-
-
-// colors
-header {
-    background-color: #F5F7F8;
-
-    h1, p {
-        color: $color-editor-font;
-    }
-}
-
-.container {
-
-    #preview {
-        color: $color-preview-font;
-
-        pre, code {
-            background-color: $color-code-bg;
-        }
-    }
+header,
+main {
+  min-width: 300px;
 }

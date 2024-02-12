@@ -27,7 +27,7 @@ export default function Editor({ value, onEditorInput }) {
       id='editor'
       value={value}
       onChange={handleOnChange}
-      placeholder='This is a placeholder. This is the textarea. The #editor.'
+      placeholder='Type in...'
     >
     </textarea>
     </div>

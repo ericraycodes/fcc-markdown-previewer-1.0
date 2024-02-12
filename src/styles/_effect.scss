@@ -1,0 +1,30 @@
+/* color variables */
+$color-code-bg: #EFECEC;
+$color-editor-font: #352F44;
+$color-preview-font: #161A30;
+
+
+// colors
+header {
+    background-color: #F5F7F8;
+
+    h1, p {
+        color: $color-editor-font;
+    }
+}
+.container {
+
+    #preview {
+        color: $color-preview-font;
+
+        pre, code {
+            background-color: $color-code-bg;
+        }
+    }
+}
+
+
+// focus
+textarea {
+    outline: 0;
+}
